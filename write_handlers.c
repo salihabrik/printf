@@ -55,7 +55,7 @@ int length = BUFF_SIZE - ind - 1;
 char pad = ' ', extra_ch = 0;
 UNUSED(size);
 if ((flags & F_ZERO) && !(flags & F_MINUS))
-padd = '0';
+pad = '0';
 if (is_negative)
 extra_ch = '-';
 else if (flags & F_PLUS)
