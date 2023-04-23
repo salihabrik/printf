@@ -20,7 +20,7 @@ int get_width(const char *format, int *i, va_list list)
 			width *= 10;
 			width += format[g] - '0';
 		}
-		else if (format[curr_i] == '*')
+		else if (format[g] == '*')
 		{
 			g++;
 			width = va_arg(list, int);
